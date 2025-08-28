@@ -11,8 +11,7 @@ getElement("first-card-section").addEventListener("click", function (e) {
         const heartCountTotal = Number(heartCount) + 1;
         getElement("heart-count").innerText =
             heartCountTotal;
-        // console.log(heartCountTotal)
-        // heartButton.style.hover = "red";
+
     }
 
 
@@ -22,6 +21,7 @@ getElement("first-card-section").addEventListener("click", function (e) {
 getElement("first-card-section").addEventListener("mouseover", function (e) {
     if (e.target.className.includes("heart-block")) {
         e.target.style.color = "red";
+        e.target.style.cursor = "pointer";
     }
 });
 getElement("first-card-section").addEventListener("mouseout", function (e) {
@@ -38,6 +38,7 @@ getElement("first-card-section").addEventListener("mouseout", function (e) {
 getElement("first-card-section").addEventListener("click", function (e) {
     if (e.target.className.includes("copy-number")) {
         const copyBtn = e.target;
+        copyBtn.style.cursor = "pointer";
         const copyCount = copyBtn.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[1].children[2].children[0].innerText;
 
         const mainCopyBox = getElement("copy-counter").innerText;
@@ -50,6 +51,15 @@ getElement("first-card-section").addEventListener("click", function (e) {
 
 
 })
+
+getElement("first-card-section").addEventListener("mouseover", function (e) {
+    if (e.target.className.includes("copy-number")) {
+        e.target.style.cursor = "pointer";
+
+    }
+})
+
+
 function copyKori(id) {
     var txt = getElement(id).innerText;
 
@@ -126,4 +136,12 @@ getElement("first-card-section").addEventListener("click", function (e) {
 })
 
 
+getElement("first-card-section").addEventListener("mouseover", function (e) {
+    if (e.target.className.includes("call-push")) {
+        e.target.style.cursor = "pointer";
+    }
+})
 
+getElement("clear-history").addEventListener("mouseover", function () {
+    getElement("clear-history").style.cursor = "pointer";
+})
