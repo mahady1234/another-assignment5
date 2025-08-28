@@ -1,4 +1,4 @@
-<!-- 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**? -->
+1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 
 ANSWER:
 
@@ -15,9 +15,9 @@ viz: document.querySelector(".card") →it will give  only the first card.
 [iv.] About querySelectorAll("cssSelector")===> It finds all elements (like getElementsByClassName) that matches a css selector.
 viz:document.querySelectorAll(".card") → all cards.
 
-<!-- *******************************************************  -->
+******************************************************* 
 
-<!-- 2. How do you **create and insert a new element into the DOM**? -->
+2. How do you **create and insert a new element into the DOM**?
 
 ANSWER:
 
@@ -26,23 +26,23 @@ ANSWER:
 [ii]. Secondly use .innerText or .innerHTML
 [iii]. Thirdly use .appendChild() or .append()
 
-<!-- *******************************************************  -->
+******************************************************* 
 
 
-<!-- 3. What is **Event Bubbling** and how does it work? -->
+3. What is **Event Bubbling** and how does it work?
 
 ANSWER:
 
          Event Bubbling means when i clicked on a child element, the event also goes upwards to its parent, then that's parent, and this is go on .
 
 
-<!-- *******************************************************  -->
+*******************************************************  
 
-<!-- 4. What is **Event Delegation** in JavaScript? Why is it useful? -->
+ 4. What is **Event Delegation** in JavaScript? Why is it useful?
 
 ANSWER:  Event Delegation puts one event on the parent so that it can control all the children .That saves code,do it  faster and make it easy so much.
 
-<!-- Why is it useful? -->
+Why is it useful?
 
 i.  Saves code.
 ii. Better performance.
@@ -51,10 +51,10 @@ iv. Do it faster.
 v.  Make it easy.
 
 
-<!-- *******************************************************  -->
+******************************************************* 
 
 
-<!-- 5. What is the difference between **preventDefault() and stopPropagation()** methods? -->
+5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
 
 Answer:  preventDefault()===> It  stops the  default action of browser.
